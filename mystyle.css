@@ -23,29 +23,58 @@ main {
 .cards {
   display: flex;
   background: #eee;
-  align-content: space-around;
-  align-items: baseline;
-
-
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.card {
-  align-content: space-around;
-  align-items: baseline;
+.ps{
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+
+
+.imgps{
+  overflow: auto;
+  display: flex;
+  padding-left:10px;
+  padding-right:10px;
+  
+}
+
+.card{
+  overflow: hidden;
   background: #fff;
-  border: 2px #aaa;
+  border: 2px solid #aaa;
   border-radius: 5px;
   max-width: 470px;
   max-height: 300px;
-  overflow: auto;
   margin-bottom: 10px;
-  word-break: break-all;
-
+  word-wrap:break-word;
 }
+
+
 
 img {
     float:right;
-    float: top;
-    width:100px; /* you can use % */
+    width:150px; /* you can use % */
     height: auto;
+}
+
+.card ul{
+  font-style: bolder;
+}
+
+.card li{
+  list-style: none;
+  font-style: bold;
+}
+
+h2{
+  font-size: 20px;
+  line-height: 22px;
+}
+
+p{
+  line-height: 22px;
+  font-size: 16px;
 }
